@@ -40,8 +40,8 @@ body {
     /* 50px margin from bottom */
     left: 50px;
     /* 50px margin from left */
-    width: calc(100% - 100px);
-    /* Adjust width to fit within the box */
+    width: 30%;
+    /* 30% width of the video box */
     background-color: rgba(0, 0, 0, 0.8);
     /* Semi-transparent black background */
     color: white;
