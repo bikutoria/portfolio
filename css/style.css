@@ -50,7 +50,7 @@ body {
     /* 50px margin from left */
     width: 30%;
     /* 30% width of the video box */
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     /* Semi-transparent black background */
     color: white;
     /* Text color */
@@ -67,18 +67,17 @@ h1 {
 }
 
 p {
-    font-size: 1.2em;
     color: white;
     /* Paragraph color */
 }
 
 a {
-    color: #007BFF;
+    color: #303030;
     /* Link color */
     text-decoration: none;
     display: block;
     /* Ensure each link starts on a new line */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     /* Space between links */
 }
 
