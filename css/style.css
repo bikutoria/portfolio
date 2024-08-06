@@ -2,50 +2,55 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    overflow: hidden;
-    /* Prevents scrolling */
     background-color: black;
     /* Background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    /* Prevents scrolling */
 }
 
-.video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.video-background {
+    position: relative;
+    width: calc(100% - 200px);
+    /* Width minus margin */
+    height: calc(100% - 200px);
+    /* Height minus margin */
+    margin: 100px;
+    /* Margin around the video box */
+    border-radius: 15px;
+    /* Smooth edges for video box */
     overflow: hidden;
-    z-index: -1;
-    /* Sends the video to the background */
+    background-color: black;
 }
 
 #bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    /* Smooth edges for video */
 }
 
-.content {
+.text-container {
     position: absolute;
-    top: 50%;
-    left: 10%;
-    transform: translate(0, -50%);
-    width: 30%;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    bottom: 50px;
+    /* 50px margin from bottom */
+    left: 50px;
+    /* 50px margin from left */
+    width: calc(100% - 100px);
+    /* Adjust width to fit within the box */
+    background-color: rgba(0, 0, 0, 0.8);
     /* Semi-transparent black background */
     color: white;
     /* Text color */
-    text-align: left;
-    /* Align text to the left */
+    padding: 20px;
     border-radius: 10px;
-    /* Rounded corners */
+    /* Smooth edges for text container */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
 }
 
 h1 {
